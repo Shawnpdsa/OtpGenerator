@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+}
+
+.container{
+    min-width: 300px;
+    height: 320px;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 20px 20px 50px black;
+
+}
+
+#otp span{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border: 10px solid lightgrey;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-top-color: #f1c40f;
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+#otp img{
+    height: 150px;
+    filter: drop-shadow(0px 0px 20px rgb(141, 16, 141));
+    -webkit-filter: drop-shadow(0px 0px 20px rgb(141, 16, 141));
+}
+#otp{
+    height: 150px;
+    display: grid;
+    place-content: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 auto;
+    color: black;
+}
+button{
+    width: 40%;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+button:hover{
+    background-color: rgb(231, 224, 224);
+}
